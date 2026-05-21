@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <style>
         body{
@@ -21,11 +23,28 @@
         }
         button{
             margin-top: 10px;
-            width: 25px;
-            height: 25px;
+            width: 50px;
+            height: 50px;
             border: none;
             background-color: black;
             color: white;
+            border-radius: 25%;
+        }
+
+        input{
+            margin-top: 20px;
+            width: 150px;
+            height: 50px;
+            border-radius: 25px;
+
+        }
+        h2{
+            width: 80%;
+            margin: 10px auto;
+            height: 50px;
+            border-radius: 25px;
+            border: 2px solid black;
+            padding-top: 15px;
         }
     </style>
 </head>
@@ -36,11 +55,11 @@
     <input type="number" id="num1" placeholder="Enter number">
     <input type="number" id="num2" placeholder="Enter number">
     <br>
-    <button   onclick="addition()">+</button>
-    <button onclick="subtraction()">-</button>
-    <button onclick="multiplication()">*</button>
-    <button onclick="division()">/</button>
-    <button onclick="modul()">%</button>
+    <button onclick="addition()"><i class="fa-solid fa-plus fa-xl"></i></button>
+    <button onclick="subtraction()"><i class="fa-solid fa-minus fa-xl"></i></button>
+    <button onclick="multiplication()"><i class="fa-solid fa-xmark fa-xl"></i></button>
+    <button onclick="division()"><i class="fa-solid fa-divide fa-xl"></i></button>
+    <button onclick="modul()"><i class="fa-solid fa-percent fa-xl"></i></button>
 
     <h2 id="ans"></h2>
     </div>

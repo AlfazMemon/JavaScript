@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculator</title>
+</head>
+<body>
+    <input type="number" id="marks" placeholder="Enter your Marks">
+    <button onclick="GradeCacl()">Get Your Grade</button>
+    <div id="info">
+
+    </div>
+
+    <script>
+        let studentName = prompt("Enter Student Name :")
+
+        function GradeCacl(){
+
+            let marks = Number(document.getElementById('marks').value);
+            let grade;
+            let msg;
+
+            if(marks <100 && marks >=90){
+                grade = "A+";
+                msg = "Well Done.!!"
+            }
+
+            else if(marks <90 && marks >=80){
+                grade = "A";
+                msg = "Almost There.!!";
+            }
+
+            else if(marks <80 && marks >=70){
+                grade = "B+";
+                msg = "You can do Better.!!";
+            }
+
+             else if(marks <70 && marks >=60){
+                grade = "B";
+                msg = "You need to do more.!!";
+            }
+
+            else if(marks <60 && marks >=35){
+                grade = "C";
+                msg = "Too Less.!!";
+            }
+
+             else{
+                grade = "F";
+                msg = "You Are Fail.!!";
+            }
+
+
+            document.getElementById('info').innerHTML = `<h2>Student Name :${studentName} </h2>
+            <h3>Student marks :${marks} </h3>
+            <h3>Student Grade :${grade} </h3>
+            <h3>${msg} </h3>`
+        }
+    </script>
+</body>
+</html>
