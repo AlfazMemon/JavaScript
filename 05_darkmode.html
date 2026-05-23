@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    .container {
+        box-shadow: 0px 4px 8px rgb(0, 0, 0.2);
+        width: 500px;
+        height: 300px;
+        margin: 10% auto;
+    }
+
+    input {
+        width: 90%;
+        height: 40px;
+        margin: 20px 22px;
+
+    }
+
+    #theme {
+        background-color: white;
+        color: black;
+        margin-top: 10px;
+        margin-left: 90%;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 2px solid green;
+    }
+
+    #phone {
+        background-color: black;
+        color: white;
+
+    }
+
+    #pass {
+        background-color: black;
+        color: white;
+    }
+
+    #login {
+        background-color: green;
+        color: white;
+        margin: 20px 200px;
+        width: 100px;
+        height: 30px;
+        border-radius: 25px;
+        border: none;
+    }
+</style>
+
+<body>
+
+
+    <div class="container" id="box">
+        <button onclick="DarkTheme()" id="theme"><i class="fa-solid fa-moon"></i></button>
+        <input type="number" id="phone" placeholder="Enter Phone Number ">
+        <input type="password" id="pass" placeholder="Enter Password">
+        <button id="login" onclick="login()">Login</button>
+
+    </div>
+
+
+
+
+
+
+
+    <script>
+
+        let box = document.getElementById('box');
+        let pass = document.getElementById('pass');
+        let phone = document.getElementById('phone');
+        let theme = document.getElementById('theme');
+
+        function DarkTheme() {
+
+
+
+            if (box.style.backgroundColor === 'black') {
+                box.style.backgroundColor = 'white';
+                box.style.color = 'black';
+
+                pass.style.backgroundColor = 'black';
+                pass.style.color = 'white';
+
+                phone.style.backgroundColor = 'black';
+                phone.style.color = 'white';
+
+                theme.style.backgroundColor = 'white';
+                theme.style.color = 'black';
+
+            }
+
+            else {
+                box.style.backgroundColor = 'black';
+                box.style.color = 'white';
+
+                pass.style.backgroundColor = 'white';
+                pass.style.color = 'black';
+
+                phone.style.backgroundColor = 'white';
+                phone.style.color = 'black';
+
+                theme.style.backgroundColor = 'black';
+                theme.style.color = 'white';
+
+            }
+
+
+        }
+
+        function login() {
+
+            if (pass.value === "" || phone.value === "") {
+                alert("Enter your info first");
+            }
+
+            else {
+
+                alert("Login Succesfully.!!");
+
+            }
+
+        }
+    </script>
+</body>
+
+</html>

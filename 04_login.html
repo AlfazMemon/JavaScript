@@ -58,11 +58,11 @@
             let correctEmail = "alfazmemon741@email.com";
             let correctPassword = "alfaz@123";
 
-            if(userEmail == "" && userPassword == ""){
+            if(userEmail == "" || userPassword == ""){
                 msg = "All Field Required";
             }
 
-            else if(userEmail !== correctEmail || userPassword !== correctEmail){
+            else if(userEmail !== correctEmail || userPassword !== correctPassword){
                 msg = "Invalid Email OR Password";
             }
 
