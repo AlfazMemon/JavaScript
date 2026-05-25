@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details page</title>
+
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    #product-container {
+        display: flex;
+        padding: 50px;
+        margin: 6% auto;
+        width: 900px;
+        box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+        border-radius: 25px;
+
+    }
+
+    .left {
+        width: 50%;
+    }
+
+    .right {
+        width: 50%;
+    }
+
+    .right p {
+        line-height: 1.5;
+        word-wrap: break-word;
+    }
+
+    img {
+        width: 100%;
+        height: 400px;
+        object-fit: contain;
+    }
+
+    hr {
+        margin-top: 20px;
+    }
+
+    .info {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .safe {
+        color: green;
+    }
+
+    .danger {
+        color: red;
+    }
+    .bottom{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        align-items: center;
+    }
+    button{
+        align-items: center;
+        width: 150px;
+        height: 40px;
+        border-radius: 25px;
+        margin-top: 10px;
+        border: 0;
+        cursor: pointer;
+    }
+    #add{
+        background-color: yellow;
+        
+    }
+    #buy{
+        background-color: orange;
+    }
+</style>
+
+<body>
+
+    <div id="product-container">
+    </div>
+    <script>
+
+        //object     
+        let product = {
+            image: "https://rukminim2.flixcart.com/image/1536/1536/xif0q/mobile/f/v/m/-original-imahft6chnx2vbuy.jpeg?q=90",
+            name: "Apple iPhone 17 Pro",
+            details: `512 GB: 15.93 cm (6.3″)Apple iPhone 17 Pro 512 GB: 15.93 cm (6.3″) 
+            Display with Promotion up to 120Hz, A19 Pro Chip, Breakthrough Battery Life,
+             Pro Fusion Camera System with Center Stage Front Camera; Cosmic Orange`,
+            color: "Cosmic Orange",
+            price: 154900,
+            stock: 20
+        };
+
+        let productcontainer = document.getElementById('product-container');
+
+        let text = product.stock > 0 ? `<span class="safe">In Stock</span>` : `<span class="danger">Out of Stock</span>`
+
+        document.getElementById('product-container').innerHTML = `
+        <div class="left"><img src="${product.image}" alt=""></div>
+        <div class="right">
+        <h2>${product.name}</h2>
+        <p>${product.details}</p>
+        
+        <hr>
+
+       <div class="info"> 
+        <h3>₹${product.price}</h3>
+        ${text}
+       </div> 
+
+       
+    <div class="bottom">
+        <button id="add">Add to Cart</button>
+        
+        <button id="buy">Buy Now</button>
+    </div>
+    </div>
+`
+
+
+    </script>
+</body>
+
+</html>
