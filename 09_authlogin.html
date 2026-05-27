@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auth Logib</title>
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .form{
+        width: 350px;
+        margin: 14% auto;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0,0,0.4);
+        border-radius: 25px;
+    }
+
+    h2{
+        color: skyblue;
+        margin-bottom: 20px;
+        
+    }
+    input{
+        width: 100%;
+        height: 35px;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 7px;
+        cursor: pointer;
+        margin-bottom: 20px;
+
+    }
+
+    a{
+        color: skyblue;
+        text-decoration: none;
+        
+    }
+
+    button{
+        margin-top: 20px;
+        background-color: skyblue;
+        width: 100px;
+        padding: 12px;
+        cursor: pointer;
+        color: white;
+        border-radius: 10px;
+        border: 0px;
+
+
+    }
+    
+</style>
+<body>
+
+    <div class="form">
+        <h2>Login</h2>
+        <input type="text" id="Email" placeholder="Enter Your Email">
+        <input type="text" id="Password" placeholder="Enter Your Password">
+        <a href="#">Forget password?</a>
+        <br>
+        <button onclick="AuthLogin()">Login</button>
+    </div>
+
+    <script>
+
+        function AuthLogin(){
+
+            let email = document.getElementById('Email').value;
+            let password = document.getElementById('Password').value;
+
+            if (email === "" || password === ""){
+                alert("All Filed are Required");
+                return;
+            }
+
+            else if(email === "alfaz123@gmail.com" && password === "alfaz123"){
+
+                window.location.href = 'user.html';
+            }
+
+            else if(email === "admin@gmail.com" && password === "admin123"){
+
+                window.location.href = 'admin.html';
+            }
+
+            else{
+                alert("Email and Password is wrong");
+            }
+        }
+    </script>
+    
+</body>
+</html>
