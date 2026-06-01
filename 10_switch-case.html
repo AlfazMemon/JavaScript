@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Case In Java Script</title>
+</head>
+
+<body>
+
+    <div class="login-form">
+        <h1>Enter Your Details Here</h1>
+        <label for="">Student Name</label>
+        <input type="text" placeholder="Enter Student Name" id="studentName">
+        <label for="event">Event Name</label>
+        <select name="event" id="event">
+            <option value="">Select Event</option>
+            <option value="web">Web Development</option>
+            <option value="cyber"> cyber security</option>
+            <option value="design">Designing</option>
+            <option value="mobile">Mobile app Development</option>
+        </select>
+
+        <button onclick="eventregister()">Register</button>
+    </div>
+
+    <div id="msg-box">
+    </div>
+
+    <script>
+
+        function eventregister() {
+
+            const name = document.getElementById('studentName').value;
+            const event = document.getElementById('event').value;
+
+            let fees;
+            let eventName;
+
+            let msg = document.getElementById('msg-box');
+
+            switch (event) {
+
+                case 'web':
+                    fees = 700;
+                    eventName = "Web Development";
+                    break;
+
+                case 'cyber':
+                    fees = 1000;
+                    eventName = "Cyber Security";
+                    break;
+
+                case 'design':
+                    fees = 500;
+                    eventName = "designing";
+                    break;
+
+                case 'mobile':
+                    fees = 900;
+                    eventName = "Mobile app development";
+                    break;
+                    
+                default :
+                    alert("Enter Event Name");
+                    break;    
+
+            }
+
+            msg.innerHTML = `
+            
+            
+        <h1>Register Successfully</h1>
+        <h2><b>Student Name :</b>${name}</h2>
+        <p><b>Event Name :</b>${eventName}</p>
+        <p><b>Event Fees :</b>${fees}</p>
+        <p><b>Event Date :</b>07-06-2026</p>
+            `
+        }
+    </script>
+
+</body>
+
+</html>
