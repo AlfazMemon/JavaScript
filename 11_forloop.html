@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loop in JavaScript</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #product-container{
+            display: flex;
+            width: 1600px;
+            margin: 2% auto;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+        .card{
+            width: 330px;
+            padding: 18px;
+            box-shadow: 0 4px 8px rgba(0,0,0,.1);
+            margin: 20px;
+        }
+        .card img{
+            width: 300px;
+            height: 180px;
+            object-fit: contain;
+            text-align: center;
+
+        }
+        .card p{
+            margin: 14px 0;
+            text-align: left;
+        }
+        .card h3{
+            text-align: left;
+        }
+        .card button{
+            padding: 12px 24px;
+            text-align: left;
+            border: 0;
+            border-radius: 5px;
+            background-color: rgb(246, 82, 6);
+            color: white;
+            cursor: pointer;
+        }
+        .title{
+            text-align: center;
+            padding: 50px;
+        }
+        .title p{
+            margin: 14px auto;
+            width: 50%;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">
+        <h1>Discover Amazing Products at Unbeatable Prices</h1>
+        <p>Browse our wide range of high-quality products, from electronics and fashion to accessories and home essentials. Shop with confidence and find everything you need in one place.</p>
+    </div>
+    <div id="product-container">
+        
+    </div>
+
+    <script src="./product.js"></script>
+    <script>
+        let card = "";
+
+        for(let i=0;i<products.length;i++){
+            card += `
+            <div class="card">
+            <img src=${products[i].image} alt="">
+            <h3>${products[i].name}</h3>
+            <p>${products[i].desc}</p>
+            <p>${products[i].price}</p>
+            <button>View Details</button>
+        </div>`;
+        }
+
+        document.getElementById('product-container').innerHTML = card;
+    </script>
+</body>
+</html>

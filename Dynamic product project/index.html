@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic product project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="title">
+        <h1>Explore Amazing Products at Best Prices</h1>
+        <p>Explore a collection of quality products across multiple categories. Built with HTML, CSS, and JavaScript,
+            this dynamic product listing displays product information in an attractive and user-friendly interface.</p>
+    </div>
+
+
+    <div id="card-container">
+
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        let card;
+        for (let i = 0; i < products.length; i++) {
+            card += `
+    <div class="card">
+        <img src=${products[i].image} alt="">
+            <h3>${products[i].name}</h3>
+            <p>${products[i].desc}</p>
+            <p>${products[i].price}</p>
+            <button>View Details</button>
+    </div>`
+        }
+
+        document.getElementById('card-container').innerHTML = card;
+    </script>
+</body>
+
+</html>
