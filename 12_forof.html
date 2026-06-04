@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        .container{
+            width: 1000px;
+            height: 600px;
+            display: flex;
+            box-shadow: 0px 4px 8px black;
+            padding: 25px;
+            margin: 3% auto;
+            border-radius: 25px;
+
+        }
+        .left{
+            width: 100%;
+
+        }
+        img{
+            margin-top: 50px;
+           width: 100%; 
+        }
+        .right{
+            width: 100%;
+        }
+        p{
+            font-weight: bold;
+            font-size: 30px;
+        }
+        h3{
+            font-size: 22px;
+            padding: 12px;
+            background-color: black;
+            color: white;
+            width: 120px;
+            border-radius: 25px;
+        }
+        li{
+            margin: 12px 0;
+        }
+        .bottom{
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            
+        }
+        button{
+            border: none;
+            width: 110px;
+            height: 40px;
+            border-radius: 20px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        #y{
+            background-color: yellow;
+        }
+        #o{
+            background-color: orange;
+        }
+    </style>
+<body>
+    <div class="container">
+        <div class="left">
+            <img src="https://m.media-amazon.com/images/I/51nEYJB7nyL._SL1500_.jpg" alt="">
+        </div>
+        <div class="right">
+            <h2>Boat Airdopes Joy, 35Hrs Battery, Fast Charge, IWP Tech, Low Latency, 2Mic ENx, Type-C Port, v5.3 Bluetooth Earbuds, TWS Ear Buds Wireless Earphones with mic(Dark Cyan)</h2>
+            <p>Price :₹799</p>
+            <h3>Key Feature</h3>
+            <ul id="key-list"></ul>
+            <div class="bottom">
+                <button id="y">Add to Cart</button>
+                <button id="o">Buy Now</button>
+            </div>
+        </div>
+    </div>
+    
+
+    <script>
+        const list = [
+            "Low Latency BEAST Mode: Experience lag-free high-quality gaming with low latency of up to 50 ms. Visuals align with impactful audio for realistic action.",
+            "Extensive Playtime: Up to 35 hours of performance gives you plenty of time to listen to your preferred tunes. As for OTT, you can tick off your watchlist with Airdopes Alpha as your audio companion.",
+            "boAt Signature Sound: Powered by dual 13 mm drivers, these earbuds deliver matchless boAt Signature sound with superior bass.",
+            "ASAP Charging: 10 minutes of charging yields about 120 minutes of seamless performance. Revel in music to your heart’s content in no time at all!",
+        ]
+
+        let data = "";
+
+        for(let key of list){
+            data += `<li>${key}</li>`;
+        }
+
+        document.getElementById('key-list').innerHTML = data;
+    </script>
+</body>
+</html>
