@@ -1,0 +1,18 @@
+*{
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inter,sans-serif;
+}
+.topbar{
+    padding: 10px 0px;
+    background-color: #fff0e5;
+    align-items: center;
+    font-size: 17px;
+    
+    
+}
+.topbar span{
+    color: #f9995a;
+    margin-left: 100px;
+}
