@@ -28,8 +28,13 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #fff0e5;
+    border-radius: 20px;
+    background-color: #fff0e5cc;
     padding: 10px 30px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+
 
 }
 
@@ -81,4 +86,18 @@ nav {
 }
 .hero img{
     width: 100%;
+}
+
+.poster {
+    margin: 50px auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+}
+.poster img{
+    border-radius: 10px;
+    width: 352px;
+    height: 352px;
 }
