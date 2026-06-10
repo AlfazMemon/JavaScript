@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <button onclick="Apply()">Coupon Apply</button>
+    <h2 id="result"></h2>
+
+    <script>
+        const correctCoupon = "coupon123";
+        const MaxAttemp = 3;
+        let attemp = 0;
+        let userInput = "";
+
+        function Apply(){
+
+            do{
+
+               userInput = prompt(`Enter Coupon Code ${attemp}/${MaxAttemp}`);
+                attemp++;
+
+                if(userInput === correctCoupon ){
+
+                    document.getElementById('result').innerHTML = "Login Succesfully";
+                    return;
+                }
+
+            }while(attemp < MaxAttemp && userInput != correctCoupon)
+        }
+    </script>
+</body>
+</html>
