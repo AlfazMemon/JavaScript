@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrat in java script</title>
+</head>
+<body>
+    
+
+    <ul id="list">
+
+    </ul>
+
+
+    <script>
+        const courses = ["data science","web dev","ui & ux design","ai ml"]
+
+        let courseData = "";
+
+        //push = To add  at last
+
+        // courses.push("App dev");
+
+        // shift = Remove First
+        // courses.shift();
+
+        // unshift = add at first
+        // courses.unshift("data analytics");
+
+        // splice = to remove
+        // courses.splice(1,2);
+
+    
+        
+
+        for(let course of courses){
+            courseData += `<li>${course}</li>`
+        }
+
+
+
+         let msg = document.getElementById('list').innerHTML = courseData;
+
+         // const numbers = [2,7,4,5]
+
+        // const newNumbers = numbers.map((n)=> n * 2);
+        // const newNumbers = numbers.filter((n)=> n % 2 == 0);
+        // const total = numbers.reduce((sum,n)=> sum + n,0);
+        // console.log(total);
+    </script>
+</body>
+</html>
