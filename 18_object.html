@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object in Java Script</title>
+</head>
+<body>
+        <h1 id="detail"></h1>
+
+        <h2 id="h2"></h2>
+
+    <script>
+
+        const person = {
+            name:"Alfaz Memon",
+            age:19,
+            city:"kalol",
+            contact:"7041701707"
+        }
+
+
+        delete person.contact;
+
+        person.education = "Bca";
+            let Data="";
+        for (i in person){
+                Data += i + " :" + person[i] + "<br>"; 
+        }
+
+        document.getElementById('detail').innerHTML = Data;
+
+        let productData = "";
+        const product = new Object;
+        product.productName = "Iphone";
+        product.price = 79999;
+        product.category = "Electronic";
+
+
+        for (i in product){
+                productData += i + " :" + product[i] + "<br>"; 
+        }
+
+        document.getElementById('h2').innerHTML = productData;
+
+
+    </script>
+</body>
+</html>
