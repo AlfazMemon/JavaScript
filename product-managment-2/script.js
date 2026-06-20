@@ -52,5 +52,28 @@ const DisplayProduct = () =>{
     
 }
 
+const addProduct = () =>{
+
+    let name = document.getElementById('Name').value;
+    let description = document.getElementById('Description').value;
+    let category = document.getElementById('Category').value;
+    let price = document.getElementById('Price').value;
+    let image = document.getElementById('Image').value;
+
+    let NewProduct = {
+        id:products.length+1,
+        name,
+        description,
+        category,
+        price,
+        image
+    } 
+
+    products.push(NewProduct);
+
+    DisplayProduct();
+
+}
+
 DisplayProduct();
 
