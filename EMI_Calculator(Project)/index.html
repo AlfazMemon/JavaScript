@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emi Calculator</title>
+</head>
+<body>
+    <div class="box">
+        <label for="">Enter Loan Amount ₹</label>
+        <input type="number" id="principal">
+        <label for="">Enter Intrest Rate %</label>
+        <input type="number" id="Rate">
+        <label for="">Enter Months 📅</label>
+        <input type="number" id="month">
+        <button onclick="calculate()">Calculate</button>
+
+        <div id="error-box">
+
+        </div>
+        <div id="resultbox">
+
+        </div>
+    </div>
+
+    <script>
+        function calculate(){
+            let principal = document.getElementById('principal').value;
+        let rate = document.getElementById('Rate').value;
+        let Month = document.getElementById('month').value;
+
+        let monthlyRate = rate / 12 / 100;
+        let power = Math.pow(1+monthlyRate,Month);
+        let Emi = (principal * monthlyRate * power) / (power -1);
+        console.log(Emi);
+        console.log(power);
+        }
+    </script>
+</body>
+</html>
