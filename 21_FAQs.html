@@ -1,21 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+
+    <style>
+        .faq-section {
+            width: 1000px;
+            margin: 3% auto;
+        }
+
+        .question {
+            cursor: pointer;
+            padding: 15px;
+            background: #f1f1f1;
+        }
+
+        .answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            padding: 0 15px;
+        }
+
+        .faq-item.active .answer {
+            max-height: 200px;
+            padding: 15px;
+        }
+    </style>
+
+
+    <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+            <h3 class="question">1. What is Red & White Skill Education?</h3>
+            <p class="answer">
+                Red & White Skill Education is a leading training institute that provides
+                industry-focused courses designed to help students build practical skills
+                and advance their careers.
+            </p>
+        </div>
+
+        <div class="faq-item">
+            <h3 class="question">2. Who can enroll in the courses?</h3>
+            <p class="answer">
+                Students, graduates, job seekers, and working professionals can enroll
+                in our courses based on their interests, career goals, and eligibility requirements.
+            </p>
+        </div>
+
+        <div class="faq-item">
+            <h3 class="question">3. Do I need prior experience to join?</h3>
+            <p class="answer">
+                No. Many of our beginner-level courses are designed for learners with no
+                prior experience, while advanced courses may require basic knowledge.
+            </p>
+        </div>
+
+        <div class="faq-item">
+            <h3 class="question">4. Do you provide placement assistance?</h3>
+            <p class="answer">
+                Yes. We offer placement assistance, including resume building,
+                interview preparation, and career guidance to help students become job-ready.
+            </p>
+        </div>
+
+        <div class="faq-item">
+            <h3 class="question">5. Will I receive a certificate after completing the course?</h3>
+            <p class="answer">
+                Yes. Students who successfully complete their course requirements
+                receive a course completion certificate.
+            </p>
+        </div>
+    </section>
 
 
 
 
 
+    <script>
+        const questions = document.querySelectorAll('.question');
 
-
-
-    <script></script>
+        questions.forEach((q) => {
+            q.addEventListener('click', () => {
+                q.parentElement.classList.toggle('active');
+            })
+        })
+    </script>
 
 
 
@@ -24,4 +101,5 @@
 
 
 </body>
+
 </html>
