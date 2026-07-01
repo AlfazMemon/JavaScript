@@ -18,6 +18,7 @@ signup.addEventListener('submit',(event)=>{
     }
 
     console.log(data);
+    signup.reset();
 })
 
 // sign in JS Start
@@ -39,5 +40,7 @@ signIn.addEventListener('submit',(event)=>{
     }
 
     console.log(details);
-
+    signIn.reset();
 })
+
+
