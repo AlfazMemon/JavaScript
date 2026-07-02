@@ -35,9 +35,4 @@ form.addEventListener('submit',(event)=>{
     
     form.reset();
 
-    localStorage.setItem('DATA',JSON.stringify(Data));
-
-
-     
 })
-
