@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+        }
+
+        .slide{
+            margin: 4% auto;
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            width: 1000px;
+            padding: 25px;
+            border-radius: 25px;
+            box-shadow: 0px 4px 8px black;
+        }
+
+        img{
+            width: 500px;
+            height: 500px;
+            /* filter: drop-shadow(0px 0px 10px #000);     */
+        }
+
+        p{
+            padding: 10px 0px;
+            font-size: 18px;
+        }
+
+        button{
+            padding: 12px 24px;
+            border: none;
+            margin: 15px 0px;
+            border-radius: 10px;
+            background: rgb(0, 255, 60);
+            cursor: pointer;
+            color: white;
+        }
+
+            
+    </style>
+<body>
+    <div class="slide-data">
+        <div id="slider">
+            <!-- Slider content goes here -->
+        </div>
+    </div>
+
+    <script>
+        const sliderData = [
+            {
+                id: 1,
+                title: "Latest Smartphones",
+                description: "Discover the newest smartphones with advanced cameras, powerful processors, and stunning displays.",
+                button: "Shop Now",
+                image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9"
+            },
+            {
+                id: 2,
+                title: "Fashion Collection",
+                description: "Upgrade your style with trendy clothing, footwear, and accessories for every occasion.",
+                button: "Explore Collection",
+                image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8"
+            },
+            {
+                id: 3,
+                title: "Gaming Zone",
+                description: "Experience next-level gaming with high-performance laptops, consoles, and accessories.",
+                button: "Start Gaming",
+                image: "https://images.unsplash.com/photo-1493711662062-fa541adb3fc8"
+            }
+        ];
+
+        let currentslide = 0;
+
+        let slider = document.getElementById('slider');
+
+        function DisplaySlide(){
+            slider.innerHTML = `
+                <div class="slide">
+                    <img src="${sliderData[currentslide].image}" alt="${sliderData[currentslide].title}">
+                    <div class="slide-content">
+                        <h1>${sliderData[currentslide].title}</h1>
+                        <p>${sliderData[currentslide].description}</p>
+                        <button>${sliderData[currentslide].button}</button>
+                    </div>
+                </div>
+            `;
+
+        }
+
+        setInterval(() =>{
+            currentslide++;
+            if(currentslide >= sliderData.length){
+                currentslide = 0;
+            }
+            DisplaySlide();
+        },9000)
+
+
+        DisplaySlide();
+    </script>
+</body >
+</html >
