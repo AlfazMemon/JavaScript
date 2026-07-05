@@ -51,6 +51,7 @@ function DisplayTask(arr){
 
         document.querySelector('tbody').append(row);
     })
+    
 }
 function DeleteTask(index){
     arr.splice(index,1);
