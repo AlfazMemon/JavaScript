@@ -45,6 +45,7 @@ function DisplayTask(arr){
         btn.addEventListener('click', () => {
             DeleteTask(index);
         });
+        
 
         td3.append(btn);
         row.append(td1,td2,td3);
