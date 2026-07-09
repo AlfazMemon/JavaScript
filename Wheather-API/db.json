@@ -1,0 +1,1094 @@
+{
+  "cities": [
+    {
+      "city": "Ahmedabad",
+      "state": "Gujarat",
+      "country": "India",
+      "temperature": 38,
+      "feels_like": 42,
+      "humidity": 93,
+      "wind_kph": 6,
+      "condition": "Cloudy"
+    },
+    {
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "country": "India",
+      "temperature": 29,
+      "feels_like": 33,
+      "humidity": 86,
+      "wind_kph": 27,
+      "condition": "Sunny"
+    },
+    {
+      "city": "Delhi",
+      "state": "Delhi",
+      "country": "India",
+      "temperature": 23,
+      "feels_like": 27,
+      "humidity": 38,
+      "wind_kph": 30,
+      "condition": "Sunny"
+    },
+    {
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "country": "India",
+      "temperature": 27,
+      "feels_like": 30,
+      "humidity": 34,
+      "wind_kph": 5,
+      "condition": "Rain"
+    },
+    {
+      "city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "temperature": 26,
+      "feels_like": 29,
+      "humidity": 38,
+      "wind_kph": 22,
+      "condition": "Thunderstorm"
+    },
+    {
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "country": "India",
+      "temperature": 27,
+      "feels_like": 30,
+      "humidity": 46,
+      "wind_kph": 2,
+      "condition": "Sunny"
+    },
+    {
+      "city": "Kolkata",
+      "state": "West Bengal",
+      "country": "India",
+      "temperature": 42,
+      "feels_like": 43,
+      "humidity": 30,
+      "wind_kph": 3,
+      "condition": "Rain"
+    },
+    {
+      "city": "Pune",
+      "state": "Maharashtra",
+      "country": "India",
+      "temperature": 20,
+      "feels_like": 24,
+      "humidity": 57,
+      "wind_kph": 16,
+      "condition": "Sunny"
+    },
+    {
+      "city": "Jaipur",
+      "state": "Rajasthan",
+      "country": "India",
+      "temperature": 25,
+      "feels_like": 28,
+      "humidity": 32,
+      "wind_kph": 19,
+      "condition": "Mist"
+    },
+    {
+      "city": "Surat",
+      "state": "Gujarat",
+      "country": "India",
+      "temperature": 30,
+      "feels_like": 31,
+      "humidity": 84,
+      "wind_kph": 16,
+      "condition": "Partly Cloudy"
+    },
+    {
+      "city": "Lucknow",
+      "state": "Uttar Pradesh",
+      "country": "India",
+      "temperature": 30,
+      "feels_like": 31,
+      "humidity": 80,
+      "wind_kph": 29,
+      "condition": "Rain"
+    },
+    {
+      "city": "Kanpur",
+      "state": "Uttar Pradesh",
+      "country": "India",
+      "temperature": 32,
+      "feels_like": 32,
+      "humidity": 69,
+      "wind_kph": 3,
+      "condition": "Rain"
+    },
+    {
+      "city": "Nagpur",
+      "state": "Maharashtra",
+      "country": "India",
+      "temperature": 32,
+      "feels_like": 36,
+      "humidity": 61,
+      "wind_kph": 14,
+      "condition": "Partly Cloudy"
+    },
+    {
+      "city": "Indore",
+      "state": "Madhya Pradesh",
+      "country": "India",
+      "temperature": 40,
+      "feels_like": 44,
+      "humidity": 47,
+      "wind_kph": 27,
+      "condition": "Sunny"
+    },
+    {
+      "city": "Bhopal",
+      "state": "Madhya Pradesh",
+      "country": "India",
+      "temperature": 21,
+      "feels_like": 24,
+      "humidity": 72,
+      "wind_kph": 30,
+      "condition": "Sunny"
+    },
+    {
+      "city": "Patna",
+      "state": "Bihar",
+      "country": "India",
+      "temperature": 24,
+      "feels_like": 27,
+      "humidity": 78,
+      "wind_kph": 19,
+      "condition": "Mist"
+    },
+    {
+      "city": "Ranchi",
+      "state": "Jharkhand",
+      "country": "India",
+      "temperature": 26,
+      "feels_like": 28,
+      "humidity": 86,
+      "wind_kph": 29,
+      "condition": "Rain"
+    },
+    {
+      "city": "Bhubaneswar",
+      "state": "Odisha",
+      "country": "India",
+      "temperature": 31,
+      "feels_like": 31,
+      "humidity": 62,
+      "wind_kph": 17,
+      "condition": "Sunny"
+    },
+    {
+      "city": "Cuttack",
+      "state": "Odisha",
+      "country": "India",
+      "temperature": 38,
+      "feels_like": 38,
+      "humidity": 32,
+      "wind_kph": 3,
+      "condition": "Rain"
+    },
+    {
+      "city": "Visakhapatnam",
+      "state": "Andhra Pradesh",
+      "country": "India",
+      "temperature": 33,
+      "feels_like": 36,
+      "humidity": 84,
+      "wind_kph": 22,
+      "condition": "Cloudy"
+    },
+    {
+      "city": "Vijayawada",
+      "state": "Andhra Pradesh",
+      "country": "India",
+      "temperature": 33,
+      "feels_like": 36,
+      "humidity": 92,
+      "wind_kph": 26,
+      "condition": "Mist"
+    },
+    {
+      "city": "Kochi",
+      "state": "Kerala",
+      "country": "India",
+      "temperature": 28,
+      "feels_like": 31,
+      "humidity": 31,
+      "wind_kph": 18,
+      "condition": "Thunderstorm"
+    },
+    {
+      "city": "Thiruvananthapuram",
+      "state": "Kerala",
+      "country": "India",
+      "temperature": 34,
+      "feels_like": 35,
+      "humidity": 75,
+      "wind_kph": 10,
+      "condition": "Rain"
+    },
+    {
+      "city": "Kozhikode",
+      "state": "Kerala",
+      "country": "India",
+      "temperature": 35,
+      "feels_like": 35,
+      "humidity": 85,
+      "wind_kph": 6,
+      "condition": "Rain"
+    },
+    {
+      "city": "Mysuru",
+      "state": "Karnataka",
+      "country": "India",
+      "temperature": 31,
+      "feels_like": 35,
+      "humidity": 71,
+      "wind_kph": 16,
+      "condition": "Rain"
+    },
+    {
+      "city": "Mangaluru",
+      "state": "Karnataka",
+      "country": "India",
+      "temperature": 29,
+      "feels_like": 31,
+      "humidity": 50,
+      "wind_kph": 9,
+      "condition": "Mist"
+    },
+    {
+      "city": "Vadodara",
+      "state": "Gujarat",
+      "country": "India",
+      "temperature": 41,
+      "feels_like": 42,
+      "humidity": 31,
+      "wind_kph": 2,
+      "condition": "Partly Cloudy"
+    },
+    {
+      "city": "Rajkot",
+      "state": "Gujarat",
+      "country": "India",
+      "temperature": 33,
+      "feels_like": 37,
+      "humidity": 90,
+      "wind_kph": 28,
+      "condition": "Thunderstorm"
+    },
+    {
+      "city": "Bhavnagar",
+      "state": "Gujarat",
+      "country": "India",
+      "temperature": 36,
+      "feels_like": 36,
+      "humidity": 90,
+      "wind_kph": 28,
+      "condition": "Mist"
+    },
+    {
+      "city": "Jamnagar",
+      "state": "Gujarat",
+      "country": "India",
+      "temperature": 31,
+      "feels_like": 32,
+      "humidity": 51,
+      "wind_kph": 8,
+      "condition": "Partly Cloudy"
+    },
+    {
+      "city": "Nashik",
+      "state": "Maharashtra",
+      "country": "India",
+      "temperature": 20,
+      "feels_like": 22,
+      "humidity": 61,
+      "wind_kph": 17,
+      "condition": "Mist"
+    },
+    {
+      "city": "Aurangabad",
+      "state": "Maharashtra",
+      "country": "India",
+      "temperature": 25,
+      "feels_like": 29,
+      "humidity": 69,
+      "wind_kph": 8,
+      "condition": "Partly Cloudy"
+    },
+    {
+      "city": "Solapur",
+      "state": "Maharashtra",
+      "country": "India",
+      "temperature": 30,
+      "feels_like": 30,
+      "humidity": 34,
+      "wind_kph": 14,
+      "condition": "Mist"
+    },
+    {
+      "city": "Amravati",
+      "state": "Maharashtra",
+      "country": "India",
+      "temperature": 28,
+      "feels_like": 31,
+      "humidity": 56,
+      "wind_kph": 16,
+      "condition": "Cloudy"
+    },
+    {
+      "city": "Kolhapur",
+      "state": "Maharashtra",
+      "country": "India",
+      "temperature": 39,
+      "feels_like": 39,
+      "humidity": 50,
+      "wind_kph": 18,
+      "condition": "Mist"
+    },
+    {
+      "city": "Goa",
+      "state": "Goa",
+      "country": "India",
+      "temperature": 35,
+      "feels_like": 35,
+      "humidity": 30,
+      "wind_kph": 15,
+      "condition": "Mist"
+    },
+    {
+      "city": "Shimla",
+      "state": "Himachal Pradesh",
+      "country": "India",
+      "temperature": 38,
+      "feels_like": 42,
+      "humidity": 49,
+      "wind_kph": 11,
+      "condition": "Mist"
+    },
+    {
+      "city": "Manali",
+      "state": "Himachal Pradesh",
+      "country": "India",
+      "temperature": 29,
+      "feels_like": 31,
+      "humidity": 66,
+      "wind_kph": 19,
+      "condition": "Sunny"
+    },
+    {
+      "city": "Dehradun",
+      "state": "Uttarakhand",
+      "country": "India",
+      "temperature": 23,
+      "feels_like": 27,
+      "humidity": 49,
+      "wind_kph": 12,
+      "condition": "Thunderstorm"
+    },
+    {
+      "city": "Haridwar",
+      "state": "Uttarakhand",
+      "country": "India",
+      "temperature": 41,
+      "feels_like": 45,
+      "humidity": 81,
+      "wind_kph": 16,
+      "condition": "Partly Cloudy"
+    },
+    {
+      "city": "Nainital",
+      "state": "Uttarakhand",
+      "country": "India",
+      "temperature": 28,
+      "feels_like": 29,
+      "humidity": 58,
+      "wind_kph": 23,
+      "condition": "Partly Cloudy"
+    },
+    {
+      "city": "Srinagar",
+      "state": "Jammu & Kashmir",
+      "country": "India",
+      "temperature": 22,
+      "feels_like": 22,
+      "humidity": 79,
+      "wind_kph": 11,
+      "condition": "Mist"
+    },
+    {
+      "city": "Jammu",
+      "state": "Jammu & Kashmir",
+      "country": "India",
+      "temperature": 42,
+      "feels_like": 46,
+      "humidity": 37,
+      "wind_kph": 8,
+      "condition": "Thunderstorm"
+    },
+    {
+      "city": "Leh",
+      "state": "Ladakh",
+      "country": "India",
+      "temperature": 30,
+      "feels_like": 30,
+      "humidity": 39,
+      "wind_kph": 16,
+      "condition": "Cloudy"
+    },
+    {
+      "city": "Chandigarh",
+      "state": "Chandigarh",
+      "country": "India",
+      "temperature": 36,
+      "feels_like": 36,
+      "humidity": 39,
+      "wind_kph": 24,
+      "condition": "Cloudy"
+    },
+    {
+      "city": "Ludhiana",
+      "state": "Punjab",
+      "country": "India",
+      "temperature": 30,
+      "feels_like": 34,
+      "humidity": 70,
+      "wind_kph": 2,
+      "condition": "Sunny"
+    },
+    {
+      "city": "Amritsar",
+      "state": "Punjab",
+      "country": "India",
+      "temperature": 25,
+      "feels_like": 27,
+      "humidity": 74,
+      "wind_kph": 9,
+      "condition": "Rain"
+    },
+    {
+      "city": "Jalandhar",
+      "state": "Punjab",
+      "country": "India",
+      "temperature": 30,
+      "feels_like": 34,
+      "humidity": 86,
+      "wind_kph": 23,
+      "condition": "Mist"
+    },
+    {
+      "city": "Bathinda",
+      "state": "Punjab",
+      "country": "India",
+      "temperature": 20,
+      "feels_like": 21,
+      "humidity": 38,
+      "wind_kph": 18,
+      "condition": "Thunderstorm"
+    },
+    {
+      "city": "Agra",
+      "state": "Uttar Pradesh",
+      "country": "India",
+      "temperature": 31,
+      "feels_like": 33,
+      "humidity": 53,
+      "wind_kph": 4,
+      "condition": "Partly Cloudy"
+    },
+    {
+      "city": "Varanasi",
+      "state": "Uttar Pradesh",
+      "country": "India",
+      "temperature": 31,
+      "feels_like": 33,
+      "humidity": 51,
+      "wind_kph": 7,
+      "condition": "Cloudy"
+    },
+    {
+      "city": "Prayagraj",
+      "state": "Uttar Pradesh",
+      "country": "India",
+      "temperature": 19,
+      "feels_like": 20,
+      "humidity": 50,
+      "wind_kph": 17,
+      "condition": "Partly Cloudy"
+    },
+    {
+      "city": "Meerut",
+      "state": "Uttar Pradesh",
+      "country": "India",
+      "temperature": 41,
+      "feels_like": 45,
+      "humidity": 86,
+      "wind_kph": 9,
+      "condition": "Partly Cloudy"
+    },
+    {
+      "city": "Noida",
+      "state": "Uttar Pradesh",
+      "country": "India",
+      "temperature": 38,
+      "feels_like": 39,
+      "humidity": 35,
+      "wind_kph": 2,
+      "condition": "Cloudy"
+    },
+    {
+      "city": "Ghaziabad",
+      "state": "Uttar Pradesh",
+      "country": "India",
+      "temperature": 41,
+      "feels_like": 44,
+      "humidity": 51,
+      "wind_kph": 15,
+      "condition": "Cloudy"
+    },
+    {
+      "city": "Gorakhpur",
+      "state": "Uttar Pradesh",
+      "country": "India",
+      "temperature": 34,
+      "feels_like": 35,
+      "humidity": 47,
+      "wind_kph": 8,
+      "condition": "Rain"
+    },
+    {
+      "city": "Aligarh",
+      "state": "Uttar Pradesh",
+      "country": "India",
+      "temperature": 31,
+      "feels_like": 32,
+      "humidity": 30,
+      "wind_kph": 17,
+      "condition": "Rain"
+    },
+    {
+      "city": "Bareilly",
+      "state": "Uttar Pradesh",
+      "country": "India",
+      "temperature": 19,
+      "feels_like": 23,
+      "humidity": 51,
+      "wind_kph": 8,
+      "condition": "Thunderstorm"
+    },
+    {
+      "city": "Gwalior",
+      "state": "Madhya Pradesh",
+      "country": "India",
+      "temperature": 35,
+      "feels_like": 37,
+      "humidity": 93,
+      "wind_kph": 18,
+      "condition": "Partly Cloudy"
+    },
+    {
+      "city": "Jabalpur",
+      "state": "Madhya Pradesh",
+      "country": "India",
+      "temperature": 30,
+      "feels_like": 33,
+      "humidity": 74,
+      "wind_kph": 29,
+      "condition": "Cloudy"
+    },
+    {
+      "city": "Ujjain",
+      "state": "Madhya Pradesh",
+      "country": "India",
+      "temperature": 22,
+      "feels_like": 26,
+      "humidity": 49,
+      "wind_kph": 8,
+      "condition": "Cloudy"
+    },
+    {
+      "city": "Raipur",
+      "state": "Chhattisgarh",
+      "country": "India",
+      "temperature": 29,
+      "feels_like": 29,
+      "humidity": 94,
+      "wind_kph": 4,
+      "condition": "Sunny"
+    },
+    {
+      "city": "Bilaspur",
+      "state": "Chhattisgarh",
+      "country": "India",
+      "temperature": 32,
+      "feels_like": 36,
+      "humidity": 36,
+      "wind_kph": 20,
+      "condition": "Rain"
+    },
+    {
+      "city": "Durg",
+      "state": "Chhattisgarh",
+      "country": "India",
+      "temperature": 32,
+      "feels_like": 33,
+      "humidity": 80,
+      "wind_kph": 18,
+      "condition": "Cloudy"
+    },
+    {
+      "city": "Jodhpur",
+      "state": "Rajasthan",
+      "country": "India",
+      "temperature": 36,
+      "feels_like": 40,
+      "humidity": 33,
+      "wind_kph": 17,
+      "condition": "Mist"
+    },
+    {
+      "city": "Udaipur",
+      "state": "Rajasthan",
+      "country": "India",
+      "temperature": 27,
+      "feels_like": 28,
+      "humidity": 40,
+      "wind_kph": 15,
+      "condition": "Thunderstorm"
+    },
+    {
+      "city": "Kota",
+      "state": "Rajasthan",
+      "country": "India",
+      "temperature": 36,
+      "feels_like": 36,
+      "humidity": 77,
+      "wind_kph": 8,
+      "condition": "Sunny"
+    },
+    {
+      "city": "Ajmer",
+      "state": "Rajasthan",
+      "country": "India",
+      "temperature": 31,
+      "feels_like": 34,
+      "humidity": 77,
+      "wind_kph": 9,
+      "condition": "Rain"
+    },
+    {
+      "city": "Bikaner",
+      "state": "Rajasthan",
+      "country": "India",
+      "temperature": 41,
+      "feels_like": 42,
+      "humidity": 31,
+      "wind_kph": 28,
+      "condition": "Rain"
+    },
+    {
+      "city": "Alwar",
+      "state": "Rajasthan",
+      "country": "India",
+      "temperature": 20,
+      "feels_like": 22,
+      "humidity": 59,
+      "wind_kph": 13,
+      "condition": "Mist"
+    },
+    {
+      "city": "Hisar",
+      "state": "Haryana",
+      "country": "India",
+      "temperature": 27,
+      "feels_like": 30,
+      "humidity": 40,
+      "wind_kph": 9,
+      "condition": "Sunny"
+    },
+    {
+      "city": "Gurugram",
+      "state": "Haryana",
+      "country": "India",
+      "temperature": 40,
+      "feels_like": 40,
+      "humidity": 94,
+      "wind_kph": 10,
+      "condition": "Cloudy"
+    },
+    {
+      "city": "Faridabad",
+      "state": "Haryana",
+      "country": "India",
+      "temperature": 28,
+      "feels_like": 29,
+      "humidity": 48,
+      "wind_kph": 11,
+      "condition": "Partly Cloudy"
+    },
+    {
+      "city": "Panipat",
+      "state": "Haryana",
+      "country": "India",
+      "temperature": 22,
+      "feels_like": 22,
+      "humidity": 68,
+      "wind_kph": 10,
+      "condition": "Mist"
+    },
+    {
+      "city": "Rohtak",
+      "state": "Haryana",
+      "country": "India",
+      "temperature": 28,
+      "feels_like": 30,
+      "humidity": 36,
+      "wind_kph": 28,
+      "condition": "Partly Cloudy"
+    },
+    {
+      "city": "Siliguri",
+      "state": "West Bengal",
+      "country": "India",
+      "temperature": 28,
+      "feels_like": 28,
+      "humidity": 59,
+      "wind_kph": 8,
+      "condition": "Thunderstorm"
+    },
+    {
+      "city": "Durgapur",
+      "state": "West Bengal",
+      "country": "India",
+      "temperature": 24,
+      "feels_like": 28,
+      "humidity": 87,
+      "wind_kph": 26,
+      "condition": "Sunny"
+    },
+    {
+      "city": "Asansol",
+      "state": "West Bengal",
+      "country": "India",
+      "temperature": 23,
+      "feels_like": 26,
+      "humidity": 93,
+      "wind_kph": 21,
+      "condition": "Partly Cloudy"
+    },
+    {
+      "city": "Howrah",
+      "state": "West Bengal",
+      "country": "India",
+      "temperature": 18,
+      "feels_like": 22,
+      "humidity": 62,
+      "wind_kph": 19,
+      "condition": "Rain"
+    },
+    {
+      "city": "Guwahati",
+      "state": "Assam",
+      "country": "India",
+      "temperature": 18,
+      "feels_like": 22,
+      "humidity": 91,
+      "wind_kph": 18,
+      "condition": "Cloudy"
+    },
+    {
+      "city": "Shillong",
+      "state": "Meghalaya",
+      "country": "India",
+      "temperature": 32,
+      "feels_like": 33,
+      "humidity": 55,
+      "wind_kph": 14,
+      "condition": "Partly Cloudy"
+    },
+    {
+      "city": "Aizawl",
+      "state": "Mizoram",
+      "country": "India",
+      "temperature": 24,
+      "feels_like": 25,
+      "humidity": 55,
+      "wind_kph": 30,
+      "condition": "Thunderstorm"
+    },
+    {
+      "city": "Imphal",
+      "state": "Manipur",
+      "country": "India",
+      "temperature": 28,
+      "feels_like": 30,
+      "humidity": 87,
+      "wind_kph": 24,
+      "condition": "Rain"
+    },
+    {
+      "city": "Agartala",
+      "state": "Tripura",
+      "country": "India",
+      "temperature": 39,
+      "feels_like": 43,
+      "humidity": 71,
+      "wind_kph": 11,
+      "condition": "Cloudy"
+    },
+    {
+      "city": "Kohima",
+      "state": "Nagaland",
+      "country": "India",
+      "temperature": 31,
+      "feels_like": 34,
+      "humidity": 79,
+      "wind_kph": 21,
+      "condition": "Sunny"
+    },
+    {
+      "city": "Itanagar",
+      "state": "Arunachal Pradesh",
+      "country": "India",
+      "temperature": 36,
+      "feels_like": 38,
+      "humidity": 39,
+      "wind_kph": 4,
+      "condition": "Sunny"
+    },
+    {
+      "city": "Gangtok",
+      "state": "Sikkim",
+      "country": "India",
+      "temperature": 22,
+      "feels_like": 26,
+      "humidity": 48,
+      "wind_kph": 17,
+      "condition": "Rain"
+    },
+    {
+      "city": "Port Blair",
+      "state": "Andaman & Nicobar",
+      "country": "India",
+      "temperature": 35,
+      "feels_like": 35,
+      "humidity": 51,
+      "wind_kph": 11,
+      "condition": "Thunderstorm"
+    },
+    {
+      "city": "Puducherry",
+      "state": "Puducherry",
+      "country": "India",
+      "temperature": 34,
+      "feels_like": 34,
+      "humidity": 48,
+      "wind_kph": 29,
+      "condition": "Sunny"
+    },
+    {
+      "city": "Madurai",
+      "state": "Tamil Nadu",
+      "country": "India",
+      "temperature": 39,
+      "feels_like": 39,
+      "humidity": 33,
+      "wind_kph": 8,
+      "condition": "Rain"
+    },
+    {
+      "city": "Coimbatore",
+      "state": "Tamil Nadu",
+      "country": "India",
+      "temperature": 35,
+      "feels_like": 38,
+      "humidity": 76,
+      "wind_kph": 20,
+      "condition": "Sunny"
+    },
+    {
+      "city": "Salem",
+      "state": "Tamil Nadu",
+      "country": "India",
+      "temperature": 37,
+      "feels_like": 39,
+      "humidity": 70,
+      "wind_kph": 23,
+      "condition": "Cloudy"
+    },
+    {
+      "city": "Tiruchirappalli",
+      "state": "Tamil Nadu",
+      "country": "India",
+      "temperature": 34,
+      "feels_like": 34,
+      "humidity": 42,
+      "wind_kph": 20,
+      "condition": "Sunny"
+    },
+    {
+      "city": "Tirunelveli",
+      "state": "Tamil Nadu",
+      "country": "India",
+      "temperature": 18,
+      "feels_like": 20,
+      "humidity": 71,
+      "wind_kph": 5,
+      "condition": "Partly Cloudy"
+    },
+    {
+      "city": "Erode",
+      "state": "Tamil Nadu",
+      "country": "India",
+      "temperature": 38,
+      "feels_like": 39,
+      "humidity": 82,
+      "wind_kph": 21,
+      "condition": "Mist"
+    },
+    {
+      "city": "Warangal",
+      "state": "Telangana",
+      "country": "India",
+      "temperature": 28,
+      "feels_like": 29,
+      "humidity": 87,
+      "wind_kph": 21,
+      "condition": "Sunny"
+    },
+    {
+      "city": "Nizamabad",
+      "state": "Telangana",
+      "country": "India",
+      "temperature": 24,
+      "feels_like": 25,
+      "humidity": 36,
+      "wind_kph": 9,
+      "condition": "Rain"
+    },
+    {
+      "city": "Karimnagar",
+      "state": "Telangana",
+      "country": "India",
+      "temperature": 32,
+      "feels_like": 32,
+      "humidity": 77,
+      "wind_kph": 9,
+      "condition": "Rain"
+    },
+    {
+      "city": "Kurnool",
+      "state": "Andhra Pradesh",
+      "country": "India",
+      "temperature": 24,
+      "feels_like": 25,
+      "humidity": 92,
+      "wind_kph": 30,
+      "condition": "Partly Cloudy"
+    },
+    {
+      "city": "Tirupati",
+      "state": "Andhra Pradesh",
+      "country": "India",
+      "temperature": 36,
+      "feels_like": 38,
+      "humidity": 51,
+      "wind_kph": 2,
+      "condition": "Sunny"
+    },
+    {
+      "city": "Guntur",
+      "state": "Andhra Pradesh",
+      "country": "India",
+      "temperature": 18,
+      "feels_like": 20,
+      "humidity": 73,
+      "wind_kph": 14,
+      "condition": "Thunderstorm"
+    },
+    {
+      "city": "Hubballi",
+      "state": "Karnataka",
+      "country": "India",
+      "temperature": 33,
+      "feels_like": 33,
+      "humidity": 54,
+      "wind_kph": 13,
+      "condition": "Thunderstorm"
+    },
+    {
+      "city": "Belagavi",
+      "state": "Karnataka",
+      "country": "India",
+      "temperature": 22,
+      "feels_like": 25,
+      "humidity": 70,
+      "wind_kph": 29,
+      "condition": "Rain"
+    },
+    {
+      "city": "Dharwad",
+      "state": "Karnataka",
+      "country": "India",
+      "temperature": 33,
+      "feels_like": 37,
+      "humidity": 39,
+      "wind_kph": 5,
+      "condition": "Mist"
+    },
+    {
+      "city": "Jamshedpur",
+      "state": "Jharkhand",
+      "country": "India",
+      "temperature": 25,
+      "feels_like": 27,
+      "humidity": 69,
+      "wind_kph": 19,
+      "condition": "Cloudy"
+    },
+    {
+      "city": "Dhanbad",
+      "state": "Jharkhand",
+      "country": "India",
+      "temperature": 34,
+      "feels_like": 34,
+      "humidity": 72,
+      "wind_kph": 8,
+      "condition": "Mist"
+    },
+    {
+      "city": "Muzaffarpur",
+      "state": "Bihar",
+      "country": "India",
+      "temperature": 41,
+      "feels_like": 43,
+      "humidity": 63,
+      "wind_kph": 29,
+      "condition": "Mist"
+    },
+    {
+      "city": "Darbhanga",
+      "state": "Bihar",
+      "country": "India",
+      "temperature": 37,
+      "feels_like": 38,
+      "humidity": 60,
+      "wind_kph": 18,
+      "condition": "Mist"
+    },
+    {
+      "city": "Purnia",
+      "state": "Bihar",
+      "country": "India",
+      "temperature": 19,
+      "feels_like": 22,
+      "humidity": 95,
+      "wind_kph": 29,
+      "condition": "Mist"
+    }
+  ]
+}
