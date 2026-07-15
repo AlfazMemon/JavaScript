@@ -38,16 +38,22 @@ let searchByButton = document.getElementById("search-by-button");
 
 // Problem 1. List of pitches on page load [3}
 
+    let arr = [];
+
+//Url Creating Logic
+
 function Fetchdata(){
     fetch("http://localhost:3000/pitches")
     .then((res)=>res.json())
-    .then((data)=>Display(data))
+    .then((data)=>{Display(data),arr = data})
     .catch((err)=>console.log(err))
 
     
 }
 
 Fetchdata();
+
+// Display Logic
 
 function Display(data){
     let store = data.map((ele)=>`
@@ -65,6 +71,8 @@ function Display(data){
 
     mainSection.innerHTML = store.join(" ");        
 }
+
+// Add button Logic
 
 pitchCreateBtn.addEventListener("click",()=>{
 
@@ -85,6 +93,8 @@ pitchCreateBtn.addEventListener("click",()=>{
     })
 })
 
+// Delete Button Logic
+
 document.addEventListener('click',(e)=>{
     if(e.target.classList.contains("card-button")){
         let id = e.target.dataset.id;
@@ -99,5 +109,99 @@ document.addEventListener('click',(e)=>{
         .then((data)=> console.log("Deleted Succesfully"))
         .catch((error)=>console.log(error))
 
+    }
+})
+
+// Edit Button Logic
+
+document.addEventListener('click',(e)=>{
+    if(e.target.classList.contains('card-link')){
+        let updatedId = e.target.dataset.id
+
+        fetch(`http://localhost:3000/pitches/${updatedId}`)
+        .then((res)=>res.json())
+        .then((data)=> {
+           ((updatePitchIdInput.value = data.id),
+            (updatePitchTitleInput.value = data.title),
+            (updatePitchImageInput.value = data.image),
+            (updatePitchfounderInput.value = data.founder),
+            (updatePitchCategoryInput.value = data.category),
+            (updatePitchPriceInput.value = data.price)
+        )
+        })
+        .catch((err)=>console.log(err))
+    }
+})
+
+updatePitchBtn.addEventListener('click',(e)=>{
+
+    let updatedData = {
+        id : updatePitchIdInput.value,
+        title : updatePitchTitleInput.value,
+        image : updatePitchImageInput.value,
+        founder : updatePitchfounderInput.value,
+        category : updatePitchCategoryInput.value,
+        price : updatePitchPriceInput.value
+    }
+
+    fetch(`http://localhost:3000/pitches/${updatedData.id}`,{
+        method: 'PUT',
+        headers: {
+            'Content-Type': 'application/json' // Tells the server the payload is JSON
+        },
+        body : JSON.stringify(updatedData)
+    })
+
+})
+
+// Filter Logic
+
+sortAtoZBtn.addEventListener('click',()=>{
+
+    let ans = arr.sort((a,b)=>a.price - b.price)
+
+    Display(ans);
+})
+
+sortZtoABtn.addEventListener('click',()=>{
+    let ans = arr.sort((a,b)=>b.price - a.price)
+    Display(arr);
+})
+
+filterFood.addEventListener('click',()=>{
+    let abc = arr.filter((el)=>(el.category === "Food"));
+    Display(abc);
+})
+
+filterElectronics.addEventListener('click',()=>{
+    let abc = arr.filter((el)=>(el.category === "Electronics"))
+    Display(abc);
+})
+
+filterPersonalCare.addEventListener('click',()=>{
+    let abc = arr.filter((el)=>(el.category === "Personal Care"))
+    Display(abc);
+})
+
+// Search Logic
+
+searchByButton.addEventListener('click',()=>{
+    let serchByValue = searchByInput.value.toLowerCase();
+    if(searchBySelect.value === "title"){
+
+        let abc = arr.filter((el)=>(el.title.toLowerCase().includes(serchByValue)))
+
+        Display(abc);
+
+    }
+    else if(searchBySelect.value === "founder"){
+
+        let abc = arr.filter((el)=>(el.founder.toLowerCase().includes(serchByValue)))
+
+        Display(abc);
+    }
+
+    else{
+        Display(arr);
     }
 })
