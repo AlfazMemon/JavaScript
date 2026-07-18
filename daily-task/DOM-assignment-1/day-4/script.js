@@ -68,11 +68,17 @@ function Search(){
     
     let searchInput = document.getElementById('search').value.toLowerCase();
 
-    if(searchInput != ""){
+    if(searchInput === ""){
+
+        Display()
+        return  
+    }
+    else{
         let abc = arr.filter((el)=>el.title.toLowerCase().includes(searchInput));
         Display(abc)
     }
-    else{
-        Display()
-    }
+}
+
+function edit(){
+    
 }
