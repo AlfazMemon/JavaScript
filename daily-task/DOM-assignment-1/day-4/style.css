@@ -86,11 +86,13 @@ button:hover{
     gap:10px;
 }
 
-.edit{
-    background:#28a745;
-}
 
-.delete{
+
+.delete,.edit{
     background:#dc3545;
     width: 150px;
+}
+
+.edit{
+    background:#28a745;
 }
